@@ -1,0 +1,105 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.notes-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    padding: 20px;
+}
+
+.note{
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 200px;
+    flex: 1 1 200px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative; 
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.note-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 2rem;
+    overflow: hidden;
+}
+
+.note-body{
+    height: 75%;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+#view-edit{
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#note-title{
+    font-size:1.5rem;
+    font-weight: bold;
+}
+
+#note-title, #note-body{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+}   
+
+.nav-bar{
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+
+.nav-title, .nav-buttons{
+    padding: 10px;
+    display: flex;
+    gap:20px;
+    color:white;
+    text-decoration: none;
+}
+
+.nav-button{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.nav-button:hover{
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+#button-delete-note:hover{
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+#button-delete-note:active{
+    background-color: rgba(255, 0, 0, 1);
+}
+
+#button-save-note:hover{
+    background-color: rgba(0, 255, 0, 0.6);
+}
+
+#button-save-note:active{
+    background-color: rgba(0, 255, 0, 0.199);
+}

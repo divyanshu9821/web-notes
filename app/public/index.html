@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Notes</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a href="/" class="nav-title">/// Notes ///</a>
+        <div class="nav-buttons">
+            <div class="nav-button" id="button-new-note" onclick="open_view('','','')">add</div>
+            <div class="nav-button" style="display: none;" id="button-save-note">Save</div>
+            <div class="nav-button" style="display: none;" id="button-delete-note">Delete</div>
+            <div class="nav-button" style="display: none;" id="button-view-close">Overview</div>
+        </div>
+    </div>
+
+    <div class="notes-container"></div>
+
+
+    <div style="display: none;" id="view-edit">
+        <input type="hidden" id="note-id">
+        <textarea rows="1" placeholder="Title" id="note-title"></textarea>
+        <hr>
+        <textarea rows="3" placeholder="Description.." id="note-body"></textarea>
+    </div>    
+
+    <script src="assets/render_view.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
